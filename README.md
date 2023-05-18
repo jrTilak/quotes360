@@ -1,0 +1,55 @@
+[**Quotes360**](quotes360-jrTilak.netlify.com)
+
+This is a simple web application that displays a random quote and an accompanying image. The quote and image are fetched from external APIs: [API Ninjas for quotes](https://api-ninjas.com/) and [Unsplash for images](https://unsplash.com/developers).
+
+***Author***
+
+Created by [Tilak Thapa](https://github.com/jrTilak/quotes360).
+
+Date: 05/18/2023.
+
+[***Visit Website***](quotes360-jrTilak.netlify.com)
+
+*Features*
+- Fetches a random quote from the API Ninjas quote API.
+- Fetches a random image from the Unsplash API.
+- Displays the quote and the image on the web page.
+- Provides a "Next" button to fetch and display a new random quote and image.
+
+Installation
+1. Clone the repository to your local machine:
+```bash
+git clone <repository-url>
+```
+
+2. Navigate to the project directory:
+```bash
+cd quotes360
+```
+
+3. Install the dependencies:
+```bash
+npm install
+```
+
+4. Start the development server:
+```bash
+npm start
+```
+
+5. Open your browser and visit http://localhost:3000 to view the application.
+
+Technologies Used
+- React: JavaScript library for building user interfaces.
+- Axios: Promise-based HTTP client for making API requests.
+- API Ninjas: External API for fetching random quotes.
+- Unsplash: External API for fetching random images.
+
+Contributing
+Contributions are welcome! If you find a bug or want to add a new feature, please open an issue or submit a pull request.
+
+Acknowledgements
+- The quote API is provided by API Ninjas.
+- The images are fetched from the Unsplash API.
+- Special thanks to the authors of the dependencies used in this project.
+

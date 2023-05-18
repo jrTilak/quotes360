@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Playfair+Display&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote {
+  width: 100vw;
+  height: 100vh;
+  align-self: center;
+
+  background-image: url("https://images.unsplash.com/photo-1472396961693-142e6e269027?crop=entropy&cs=srgb&fm=jpg&ixid=M3w0NTAwMTh8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODQzODEwMDd8&ixlib=rb-4.0.3&q=85");
+  background-color: rgba(0, 0, 0, 0.504);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote h1 {
+
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.author {
+  width: 100%;
+  text-align: right;
+  font-family: 'Caveat', cursive;
+  font-size: 1.2rem;
+  padding-right: 50px;
+  color: rgba(255, 255, 255, 0.744);
+}
+
+.me {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  align-self: flex-end;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+
+.me a {
+  color: rgba(255, 255, 255, 0.533);
+}
+
+@media (max-width: 800px) {
+  #quote h1 {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .author {
+    font-size: .8rem
+  }
+
+  ;
+}
+
+/* CSS */
+.button-61 {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px, rgba(0, 0, 0, .14) 0 2px 2px 0, rgba(0, 0, 0, .12) 0 1px 5px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Roboto, sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: .0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  will-change: transform, opacity;
+}
+
+.button-61:hover {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+
+.button-61:not(:disabled) {
+  background-color: #6200ee;
+}
+
+.button-61:focus {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+.button-61:active {
+  box-shadow: rgba(0, 0, 0, .2) 0 5px 5px -3px, rgba(0, 0, 0, .14) 0 8px 10px 1px, rgba(0, 0, 0, .12) 0 3px 14px 2px;
+  background: #A46BF5;
+}
