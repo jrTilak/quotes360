@@ -51,7 +51,7 @@ function App() {
           {isLoading ? 'Loading...' : 'Next'}
         </button>
         <p className="me">
-          <a target='_blank' rel='noreferrer' href="https://github.com/jrTilak">&copy;jrTilak</a>
+          <a target='_blank' rel='noreferrer' href="https://github.com/jrTilak/quotes360">&copy;jrTilak</a>
         </p>
       </div>
     </main>
