@@ -45,7 +45,8 @@ function App() {
   return (
     <main>
       <div id="quote" style={{ "backgroundImage": `url(${image})` }}>
-        <h1>{quote}</h1>
+        <h1>Quotes360</h1>
+        <h2>{quote}</h2>
         <p className="author">{author}</p>
         <button className="button-61" onClick={handleNextClick} disabled={isLoading}>
           {isLoading ? 'Loading...' : 'Next'}
