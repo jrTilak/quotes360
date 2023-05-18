@@ -19,7 +19,7 @@ Date: 05/18/2023.
 Installation
 1. Clone the repository to your local machine:
 ```bash
-git clone <repository-url>
+git clone https://github.com/jrTilak/quotes360.git
 ```
 
 1. Navigate to the project directory:
