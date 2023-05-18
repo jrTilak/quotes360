@@ -5,7 +5,7 @@ const apiUrl = 'https://api.api-ninjas.com/v1/quotes';
 // API key for authentication (Replace with your own key)
 const apiKey = `bcSSdl+RJcV7LWVCLdFgFw==FiBNviULKwH3uUxp`;
 // Category of the quotes to fetch
-const category = 'inspirational';
+const category = 'love';
 
 // Function to fetch a quote from the API
 const getQuote = async () => {
