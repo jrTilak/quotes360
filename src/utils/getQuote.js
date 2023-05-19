@@ -5,15 +5,14 @@ const apiUrl = 'https://api.api-ninjas.com/v1/quotes';
 // API key for authentication (Replace with your own key)
 const apiKey = `bcSSdl+RJcV7LWVCLdFgFw==FiBNviULKwH3uUxp`;
 // Category of the quotes to fetch
-const category = 'love';
 
 // Function to fetch a quote from the API
-const getQuote = async () => {
+const getQuote = async (category) => {
     try {
         // Configuration object for the request
         const config = {
             method: 'GET', // HTTP method for the request
-            url: `${apiUrl}?category=${category}`, // Complete URL with the category query parameter
+            url: category === '' || category === undefined || category === null ? `${apiUrl}` : `${apiUrl}?category=${category}`, // Complete URL with the category query parameter
             headers: {
                 'X-Api-Key': apiKey, // Authentication API key
                 'Accept': 'image/jpg' // Specify the desired response content type as image/jpg
@@ -30,6 +29,7 @@ const getQuote = async () => {
         // Return null to indicate that no quote was fetched
         return null;
     }
+
 };
 
 // Export the getQuote function as the default export of this module

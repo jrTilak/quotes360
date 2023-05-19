@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import getQuote from './utils/getQuote';
 import getImage from './utils/getImage';
+import Input from './Input';
 
-function App() {
+const App = () => {
+  const [value, setValue] = useState('');
+
+  const handleInputChange = (selectedValue) => {
+    setValue(selectedValue);
+  };
+
   // State variables to hold the quote, author, image URL, and loading status
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
@@ -10,10 +17,10 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
 
   // Function to fetch quote and image data
-  const fetchData = async () => {
+  const fetchData = async (value) => {
     setIsLoading(true); // Set loading status to true
     let imageUrl = await getImage(); // Fetch image URL
-    let quoteData = await getQuote(); // Fetch quote data
+    let quoteData = await getQuote(value); // Fetch quote data
 
     // Handle cases where quoteData or imageUrl is null (error occurred during API request)
     if (quoteData === null) {
@@ -26,8 +33,8 @@ function App() {
       imageUrl = 'https://static.nationalgeographic.co.uk/files/styles/image_3200/public/dy179t.jpg?w=1600&h=900';
     }
 
-    if (quoteData[0].quote.length >= 250) {
-      quoteData = await getQuote()
+    while (quoteData[0].quote.length >= 250) {
+      quoteData = await getQuote(value);
     }
 
     // Update state with fetched data
@@ -38,19 +45,20 @@ function App() {
   };
 
   useEffect(() => {
-    fetchData(); // Fetch data when the component mounts
+    fetchData(value); // Fetch data when the component mounts
   }, []); // Empty dependency array to run the effect only once
 
   // Handler for the "Next" button click
   const handleNextClick = () => {
-    fetchData(); // Fetch new quote and image data
+    fetchData(value); // Fetch new quote and image data
   };
 
   return (
     <>
       <main>
+        <h1 id='heading'>Quotes360</h1>
         <div id="quote" style={{ "backgroundImage": `url(${image})` }}>
-          <h1>Quotes360</h1>
+          <Input onChange={handleInputChange} value={value} /> {/* Removed extra parentheses from handleInputChange */}
           <h2>{quote}</h2>
           <p className="author">{author}</p>
           <button className="button-61" onClick={handleNextClick} disabled={isLoading}>
@@ -63,6 +71,6 @@ function App() {
       </footer>
     </>
   );
-}
+};
 
 export default App;
