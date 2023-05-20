@@ -15,6 +15,7 @@ Date: 05/18/2023.
 - Fetches a random image from the Unsplash API.
 - Displays the quote and the image on the web page.
 - Provides a "Next" button to fetch and display a new random quote and image.
+- Able to select 65+ different categories
 
 Installation
 1. Clone the repository to your local machine:

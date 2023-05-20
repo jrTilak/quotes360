@@ -46,7 +46,7 @@ const App = () => {
 
   useEffect(() => {
     fetchData(value); // Fetch data when the component mounts
-  }, []); // Empty dependency array to run the effect only once
+  }, [value]); // Include 'value' in the dependency array
 
   // Handler for the "Next" button click
   const handleNextClick = () => {
@@ -58,7 +58,7 @@ const App = () => {
       <main>
         <h1 id='heading'>Quotes360</h1>
         <div id="quote" style={{ "backgroundImage": `url(${image})` }}>
-          <Input onChange={handleInputChange} value={value} /> {/* Removed extra parentheses from handleInputChange */}
+          <Input onChange={handleInputChange} value={value} />
           <h2>{quote}</h2>
           <p className="author">{author}</p>
           <button className="button-61" onClick={handleNextClick} disabled={isLoading}>
