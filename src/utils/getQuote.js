@@ -3,15 +3,14 @@ import axios from 'axios';
 // API endpoint URL
 const apiUrl = 'https://api.api-ninjas.com/v1/quotes';
 // API key for authentication (Replace with your own key)
-const apiKey = `bcSSdl+RJcV7LWVCLdFgFw==FiBNviULKwH3uUxp`;
-// Category of the quotes to fetch
+const apiKey = process.env.REACT_APP_API_NINJA_QUOTES_API;
 
 // Function to fetch a quote from the API
 const getQuote = async (category) => {
     try {
         // Configuration object for the request
         const config = {
-            method: 'GET', // HTTP method for the request
+            method: 'GET', 
             url: category === '' || category === undefined || category === null ? `${apiUrl}` : `${apiUrl}?category=${category}`, // Complete URL with the category query parameter
             headers: {
                 'X-Api-Key': apiKey, // Authentication API key
@@ -19,18 +18,15 @@ const getQuote = async (category) => {
             },
         };
 
-        // Make the API request using axios and the provided configuration
         const response = await axios(config);
-        // Return the response data
         return response.data;
     } catch (error) {
         // If an error occurs during the API request, log the error message from the response
-        console.error('Error:', error.response.data);
+        console.error('An error occurred while fetching the quote');
         // Return null to indicate that no quote was fetched
         return null;
     }
 
 };
 
-// Export the getQuote function as the default export of this module
 export default getQuote;

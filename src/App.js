@@ -5,7 +5,6 @@ import Input from './Input';
 
 const App = () => {
   const [value, setValue] = useState('');
-
   const handleInputChange = (selectedValue) => {
     setValue(selectedValue);
   };
@@ -14,7 +13,7 @@ const App = () => {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
   const [image, setImage] = useState('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg');
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   // Function to fetch quote and image data
   const fetchData = async (value) => {
@@ -26,7 +25,7 @@ const App = () => {
     if (quoteData === null) {
       quoteData = [{
         quote: 'API KEY Exhausted\nTry Again Later!!',
-        author: ''
+        author: 'jrTilak'
       }];
     }
     if (imageUrl === null) {
@@ -56,18 +55,43 @@ const App = () => {
   return (
     <>
       <main>
-        <h1 id='heading'>Quotes360</h1>
-        <div id="quote" style={{ "backgroundImage": `url(${image})` }}>
-          <Input onChange={handleInputChange} value={value} />
-          <h2>{quote}</h2>
-          <p className="author">{author}</p>
-          <button className="button-61" onClick={handleNextClick} disabled={isLoading}>
+        <h1
+          id='heading'>
+          Quotes360
+        </h1>
+        <div
+          id="quote"
+          style={{
+            "backgroundImage": `url(${image})`
+          }}
+        >
+          <Input
+            onChange={handleInputChange}
+            value={value}
+          />
+          <h2>
+            {quote}
+          </h2>
+          <p
+            className="author">
+            {author}
+          </p>
+          <button
+            className="button-61"
+            onClick={handleNextClick}
+            disabled={isLoading}
+          >
             {isLoading ? 'Loading...' : 'Next'}
           </button>
         </div>
       </main>
       <footer className="me">
-        <a target='_blank' rel='noreferrer' href="https://github.com/jrTilak/quotes360">&copy;jrTilak</a>
+        <a
+          target='_blank'
+          rel='noreferrer'
+          href="https://github.com/jrTilak/quotes360">
+          &copy;jrTilak
+        </a>
       </footer>
     </>
   );

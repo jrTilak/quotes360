@@ -6,6 +6,7 @@ const Input = ({ onChange }) => {
         onChange(value);
     };
     return (
+        // all the category available for quotes
         <>
             <select name="category" id="category" onChange={handleChange}>
                 <option value="">Select a Category</option>
