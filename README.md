@@ -42,107 +42,13 @@ npm start
 ---
 ## Technologies Used (Languages, Libraries, APIS and Frameworks)
 
-<div style="
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
-">
-    <div style="display: flex;
-    align-items: center;
-    flex-direction: column;">
-        <img style="height: 50px;
-    width: 50px;
-    border-radius: 100%;" src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png" alt="html" />
-        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-            <h5 style="margin: 0; margin-top:5px;
-        padding: 0;">
-                HTML
-            </h5>
-        </a>
-    </div>
-    <div style="display: flex;
-    align-items: center;
-    flex-direction: column;">
-        <img style="height: 50px;
-    width: 50px;
-    border-radius: 100%;" src="https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3-thumbnail.png"
-            alt="css" />
-        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-            <h5 style="margin: 0; margin-top:5px;
-        padding: 0;">
-                CSS
-            </h5>
-        </a>
-    </div>
-    <div style="display: flex;
-    align-items: center;
-    flex-direction: column;">
-        <img style="height: 50px;
-    width: 50px;
-    border-radius: 100%;" src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png" alt="node.js" />
-        <a target="_blank" href="https://nodejs.org/en">
-            <h5 style="margin: 0; margin-top:5px;
-        padding: 0;">
-                Node.js
-            </h5>
-        </a>
-    </div>
-    <div style="display: flex;
-    align-items: center;
-    flex-direction: column;">
-        <img style="height: 50px;
-    width: 50px;
-    border-radius: 100%;" src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png"
-            alt="react.js" />
-        <a target="_blank" href="https://react.dev/">
-            <h5 style="margin: 0; margin-top:5px;
-        padding: 0;">
-                React.js
-            </h5>
-        </a>
-    </div>
-    <div style="display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-left: 6px;">
-        <img style="height: 50px;
-    width: 50px;
-    border-radius: 100%;" src="https://authy.com/wp-content/uploads/npm-logo.png" alt="axios" />
-        <a target="_blank" href="https://www.npmjs.com/package/axios">
-            <h5 style="margin: 0; margin-top:5px;
-        padding: 0;">
-                Axios
-            </h5>
-        </a>
-    </div>
-    <div style="display: flex;
-    align-items: center;
-    flex-direction: column;">
-        <img style="height: 50px;
-    width: 50px;
-    border-radius: 100%;" src="https://res.cloudinary.com/apideck/icons/api-ninjas" alt="api ninjas" />
-        <a target="_blank" href="https://api-ninjas.com/">
-            <h5 style="margin: 0; margin-top:5px;
-        padding: 0;">
-                Api Ninjas
-            </h5>
-        </a>
-    </div>
-    <div style="display: flex;
-    align-items: center;
-    flex-direction: column;">
-        <img style="height: 50px;
-    width: 50px;
-    border-radius: 100%;" src="https://cdn.icon-icons.com/icons2/3261/PNG/512/unsplash_logo_icon_206651.png"
-            alt="unsplash" />
-        <a target="_blank" href="https://unsplash.com/developers">
-            <h5 style="margin: 0; margin-top:5px;
-        padding: 0;">
-                Unsplash
-            </h5>
-        </a>
-    </div>
-</div>
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Node.js](https://nodejs.org/en/)
+- [React.js](https://react.dev/)
+- [Axios](https://www.npmjs.com/package/axios)
+- [Unsplash API](https://unsplash.com/developers)
+- [API Ninjas](https://api-ninjas.com/)
 
 ---
 ## Contributing
