@@ -2,6 +2,7 @@
 ### Created By: [jrTilak](https://github.com/jrTilak)
 
 Quotes360 is a simple web application that displays a random quote and an random accompanying image. The quote and image are fetched from external APIs: [API Ninjas](https://api-ninjas.com/) for quotes and [Unsplash](https://unsplash.com/developers) for images.
+
 ![preview](https://repository-images.githubusercontent.com/642256188/43c892bd-3d29-42c6-9800-111a535b29ce)
 
 ---
