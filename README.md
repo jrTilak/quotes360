@@ -1,4 +1,4 @@
-# [**Quotes360**](https://quotes360.netlify.app/)
+# [**Quotes360**](https://quotes360.thapatilak.com.np/)
 ### Created By: [jrTilak](https://github.com/jrTilak)
 
 Quotes360 is a simple web application that displays a random quote and an random accompanying image. The quote and image are fetched from external APIs: [API Ninjas](https://api-ninjas.com/) for quotes and [Unsplash](https://unsplash.com/developers) for images.
