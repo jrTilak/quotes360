@@ -31,9 +31,9 @@
       <a href="#about-the-project">About The Project</a> </li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#features">Features</a></li>
-    <li><a href="#getting-started">Getting Started</a></li
-    <li><a href="#contributing">Contributing</a></li
-    <li><a href="#acknowledgements">Acknowledgements</a></li
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
